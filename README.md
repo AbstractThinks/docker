@@ -50,3 +50,20 @@ docker history (image-name)
 docker push （image-name)
 
 ```
+
+# 容器修改与保存
+
+```python
+# 查看正在运行的容器列表
+docker ps
+
+# 查看容器详细信息
+docker inspect  容器名
+
+# 查看修改后容器的id
+docker ps -l
+
+# 保存修改后的容器
+docker commit 修改后容器ID 容器重命名（例：docker commit 698 learn/ping）
+
+```
