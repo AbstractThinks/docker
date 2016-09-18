@@ -3,6 +3,37 @@
 
 tutorial
 
+
+##概念
+###镜像
+1. 镜像ID－－    每个镜像有一个唯一的id
+
+2. 镜像TAG－－    每个镜像可以打上一个或多个tag
+
+3. Repository：TAG －－   唯一标示了一个镜像
+
+###容器
+创建的容器在 `/var/lib/docker/aufs/mnt/` 目录中
+
+创建容器步骤
+
+1. 先从镜像目录复制出一个目录a
+
+2. 容器a的进程chroot到目录a下
+
+###修改并保存镜像
+
+1. 保存容器的修改 docker commit 容器id 命名（可通过docker ps －l获取修改后容器的id）
+
+	>例：docker commit 698 learn/ping 
+
+2. 提交到dockerhub上  docker push 容器名
+
+	>例：docker push learn/ping
+	
+
+
+
 ##基础命令
 
 ```python
