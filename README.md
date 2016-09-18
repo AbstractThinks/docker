@@ -30,6 +30,16 @@ tutorial
 2. 提交到dockerhub上  docker push 容器名
 
 	>例：docker push learn/ping
+
+###访问容器服务
+
+映射到指定地址的指定端口
+
+ip:hostPort:containerPort 格式指定映射使用一个特定地址
+
+> 例： sudo docker run --name 容器名 -d -p 127.0.0.1:5000:5000 镜像id ／bash/bin
+
+[参考](http://wiki.jikexueyuan.com/project/docker-technology-and-combat/port_mapping.html)
 	
 
 
